@@ -1,95 +1,79 @@
-# Retail Analytics Project
+# Retail Analytics Project 
 
 ##  Project Overview
-This project is an end-to-end **Retail Analytics system** developed as part of an internship program.  
-The goal is to analyze customer purchasing behavior using **RFM Analysis**, visualize insights using **Power BI**, and automate data refresh pipelines.
+This project focuses on end-to-end Retail Analytics using real-world data engineering, automation, and visualization practices.  
+The goal is to analyze customer behavior, segment customers using RFM analysis, store data in cloud databases, and present insights through an interactive Power BI dashboard.
+
+---
+
+## Team Collaboration
+This project was developed collaboratively by the team using GitHub for version control and task management.
+
+---
+
+##  Tech Stack
+- **Python** – Data cleaning, transformation, RFM analysis
+- **PostgreSQL** – Structured data storage
+- **Aiven Cloud** – Managed PostgreSQL cloud database
+- **DBeaver** – Database management & querying
+- **Power BI** – Interactive dashboards & visual analytics
+- **Git & GitHub** – Version control and collaboration
 
 ---
 
 ##  Project Structure
+
 Retail-Analytics/
 │
 ├── data/ # Raw and processed CSV files
-├── scripts/ # Python scripts for RFM processing
+├── scripts/ # Python scripts (RFM pipeline, DB integration)
 ├── automation/ # Week 4 automation documentation
-├── docs/ # Detailed project analysis
-├── powerbi/ # Power BI dashboard (.pbix)
-├── python_to_postgres.py # PostgreSQL integration script
-├── rfm_analysis_results.csv # Final RFM output
-├── .gitignore
-└── README.md
+├── powerbi/ # Power BI (.pbix) files
+├── assets/ # Dashboard screenshots
+├── docs/ # Project analysis & documentation
+├── README.md
+└── .gitignore
 
 
 ---
 
-## Week-wise Breakdown
+##  Key Features & Work Done
 
-###  Week 2 – RFM Analysis (Python)
-- Cleaned retail transaction data
-- Calculated:
-  - **Recency**
-  - **Frequency**
-  - **Monetary**
-- Generated R, F, M scores
-- Assigned customer segments:
-  - Champions
-  - Loyal
-  - Potential Loyalists
-  - Hibernating
-  - At Risk
-- Exported final results as CSV
+###  Week 2 – Data Processing
+- Cleaned and prepared retail transaction data
+- Generated RFM metrics (Recency, Frequency, Monetary)
+- Exported processed results as CSV
 
----
+###  Week 3 – Visualization
+- Built Power BI dashboard using RFM results
+- Visualized customer segments and revenue patterns
+- Created interactive charts and KPIs
 
-###  Week 3 – Power BI Dashboard
-- Built interactive dashboard using Power BI
-- Visualized:
-  - Customer segmentation
-  - Revenue contribution by segment
-  - RFM score distribution
-- Enabled refresh from CSV source
+###  Week 4 – Automation & Cloud Integration
+- Automated data pipeline using Python
+- Stored processed data in PostgreSQL (Aiven Cloud)
+- Queried data using DBeaver
+- Connected automated outputs to Power BI refresh workflow
 
 ---
 
-###  Week 4 – Automation & Integration
-- Automated RFM pipeline using Python
-- Integrated PostgreSQL (Aiven Cloud)
-- Enabled repeatable data refresh
-- Ensured Power BI updates on new data
-
- **Automation details:**  
-👉 [Week 4 Automation](automation/week4_automation.md)
+##  Dashboard Preview
+Power BI dashboard screenshots are available in the `assets/` folder.
 
 ---
 
- 📘 Detailed Project Analysis
-A complete explanation of the project workflow, tools used, challenges, and outcomes:
-
-👉 [Project Analysis Documentation](docs/project_analysis.md)
-
----
-
-🛠️ Tech Stack
-- Python (Pandas, NumPy)
-- PostgreSQL (Aiven Cloud)
-- Power BI
-- Git & GitHub
-- DBeaver
+##  Outcome
+- Identified high-value customer segments
+- Improved understanding of customer lifecycle
+- Built a scalable and automated analytics pipeline
+- Demonstrated real-world industry workflow
 
 ---
 
-##  Team Collaboration
-This project was completed collaboratively with clear task division:
-- Data processing
-- RFM Analysis
-- Dashboard creation
-- Automation & cloud integration
-- Documentation & version control
+##  Documentation
+-  Detailed analysis: `docs/project_analysis.md`
+-  Automation details: `automation/week4_automation.md`
 
 ---
 
-## Outcome
-- Built a scalable retail analytics pipeline
-- Converted raw data into actionable business insights
-- Delivered a professional, production-style analytics project
 
